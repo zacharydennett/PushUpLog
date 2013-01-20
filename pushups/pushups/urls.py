@@ -11,7 +11,10 @@ urlpatterns = patterns('',
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
+    
+    # The index page (which will show all users)
+    url(r'workouts/$', 'workouts.view.index'),
+                       
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 )
